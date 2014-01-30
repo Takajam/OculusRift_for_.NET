@@ -16,13 +16,15 @@ This code is implemented with Microsoft VisualStudio 2010. It consists of:
 
 OculusRift.Net
 ===================
-This is a C++/CLI project wrapping Oculus SDK C++ library. It generate "OculusRift.Net.Dll".
+This is a C++/CLI project wrapping Oculus SDK C++ library. It generate "OculusRift.Net.dll".
 
-Note that I do not include LibOVR project because I do not know the licesing of the SDK. Please copy LibOVR folder of the SDK to the project directory and add LibOVR_Msvc2010.vcxproj, or manually add location of the SDK header files and .lib files in the code.
+Note that I do not include LibOVR project because I do not know the licesing of the SDK. Please copy "LibOVR" folder of the SDK to the project directory and add "LibOVR_Msvc2010.vcxproj".
 
 OculusTest
 ===================
-The simple example on how to use the wrapper DLL. It just show followings:
+The simple example on how to use the wrapper DLL. Note that you need to add "OculusRift.Net.dll" to project references.
+
+It just show followings:
 - Yaw, Pitch, Roll
 - Device informations
 - Button to start/stop tracking
